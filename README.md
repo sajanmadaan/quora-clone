@@ -2,7 +2,7 @@
 project
 
 ### Bekend Api
-Heroku Deploy Link  https://masai-quora-clone-api.herokuapp.com/
+Heroku Deploy Link  https://quora-clone-api-masai.herokuapp.com/
 
 <h3>Some Operations<h3/>
   
