@@ -18,7 +18,7 @@ Heroku Deploy Link  https://masai-quora-clone-api.herokuapp.com/
 ### `7. patch user by id`           :-> /user/:id      with method patch
 ### `8. delete user by id`           :-> /user/:id      with method delete
 
-    <h4>Questions Operations<h4/>
+<h4>Questions Operations<h4/>
     
 ### `9. get /question`           :-> /question      with method get   
 ### `10. post question`           :-> /question      with method post
