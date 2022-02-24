@@ -1,2 +1,0 @@
-# quora-clone
-project
