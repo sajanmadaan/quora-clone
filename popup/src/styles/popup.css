@@ -34,7 +34,6 @@
 
 #popdiv{
    
- 
     border: 1px solid white;
     display: block;
     border-radius: 2%;
@@ -42,6 +41,8 @@
     height: 80%;
     width: 50%;
     position: relative;
+    margin: auto;
+   margin-top: 5%;
     /* padding: 30px;
     padding-left: 40px;
     padding-right: 40px; */
@@ -79,20 +80,15 @@
   
 }
 
-.pub_btn{
-    
-}
 
 .profile_input{
     width: 80%;
-  
     margin: auto;
     margin-top: 20px;
 }
 
 .bottom_div{
-    position: absolute;
-  
+    position: absolute; 
     bottom: 10px;
     /* border: 1px solid black; */
     width: 100%;
