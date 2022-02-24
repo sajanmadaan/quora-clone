@@ -11,8 +11,8 @@ Heroku Deploy Link  https://masai-quora-clone-api.herokuapp.com/
 ### `3. signin`           :-> /signup(email,password)       with method post
   
   
-### `3. get All user`           :-> /user       with method get
-### `3. get All user by id`           :-> /user/:id      with method get
-### `3. post the user`           :-> /user      with method post
-### `3. patch user by id`           :-> /user/:id      with method patch
-### `3. delete user by id`           :-> /user/:id      with method delete
+### `4. get All user`           :-> /user       with method get
+### `5. get All user by id`           :-> /user/:id      with method get
+### `6. post the user`           :-> /user      with method post
+### `7. patch user by id`           :-> /user/:id      with method patch
+### `8. delete user by id`           :-> /user/:id      with method delete
