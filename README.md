@@ -9,7 +9,8 @@ Heroku Deploy Link  https://masai-quora-clone-api.herokuapp.com/
 ### `1. get Loggedinuser` :-> /loggedinuser with Method get
 ### `2. signin`           :-> /signin(email,password)       with method post
 ### `3. signin`           :-> /signup(email,password)       with method post
-  
+
+  <h4>User Operations<h4/>
   
 ### `4. get All user`           :-> /user       with method get
 ### `5. get All user by id`           :-> /user/:id      with method get
