@@ -49,8 +49,9 @@ export const Notification = () =>   {
         </div>
 
     </div>
-
+    
     <div className='notificationBox'>
+    Notification
           <div className='notificationBox_inf'>
           <div className="q_icon">
           {/* <PeopleAltOutlinedIcon />   */}
@@ -66,13 +67,14 @@ export const Notification = () =>   {
               fill="#636466"
             ></path>
           </svg>
-        </div> <p>Mon</p> 
-        <h5>Join Spaces On Quora</h5>
+        </div><div className='notbar'> <p>Mon</p> 
+        <h5>Join Spaces On Quora</h5></div>
           </div>
           <div className='notificationBox_notification'>
               <p>Quora get better when you follow Spaces. Find ones that match your interests.</p>
           </div>
     </div>
+    
     </div>
     </div>
 

@@ -10,7 +10,9 @@
   padding: 5px;
   border-bottom: 1px solid lightgray;
 }
-
+.widget__content:hover {
+  background-color: whitesmoke;
+}
 .widget__content > img {
   height: 30px;
   border-radius: 5px;

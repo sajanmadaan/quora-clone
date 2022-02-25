@@ -4,7 +4,7 @@ import EditOffRoundedIcon from '@mui/icons-material/EditOffRounded';
 import MoreHorizRoundedIcon from '@mui/icons-material/MoreHorizRounded';
 import { Button, IconButton ,Stack} from "@mui/material";
 
-export const Show_ques = () => {
+export const Showques = () => {
 const ques = useSelector( (store) => store.ques);
 
     return (

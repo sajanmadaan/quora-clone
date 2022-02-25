@@ -4,6 +4,8 @@ import LanguageIcon from "@material-ui/icons/Language";
 import { Avatar } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import './CSS/Navbar.css'
+import {BasicModal} from "./popup.jsx";
+
 function Navbar() {
   return (
     <div className="qhead">
@@ -189,7 +191,8 @@ function Navbar() {
           </div>
           <LanguageIcon />
           
-          <button className="btn">Add Question</button>
+         
+          <BasicModal/>
         </div>
         
       </div>
