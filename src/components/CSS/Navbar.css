@@ -66,17 +66,22 @@
   padding:10px;
   background: #b92b27;
   border-radius: 20px;
+  border:none;
   cursor: pointer;
   font-weight: bold;
 }
 .btn1 {
   color: gray;
   margin-left: 25px;
-  padding:10px;
+  padding: 10px;
   text-transform: inherit;
-  background: #f3eeed;
   border-radius: 20px;
   cursor: pointer;
+  border: none;
+}
+
+.btn1:hover{
+  background-color: #f3eeed;
 }
 .q_icon > svg:hover{
  stroke: #8f1f1b !important;

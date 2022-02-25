@@ -2,7 +2,6 @@ import React from 'react'
 import "./CSS/QuoraBox.css"
 import { Avatar } from "@material-ui/core";
 
-
 function QuoraBox() {
   return (
       <div className='quoraBox'>
@@ -12,6 +11,7 @@ function QuoraBox() {
           </div>
           <div className='quoraBox_quora'>
               <h5>What is your question or link?</h5>
+              
           </div>
     </div>
   )

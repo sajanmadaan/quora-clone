@@ -7,13 +7,13 @@ import Button from '@mui/material/Button';
 import LiveHelpRoundedIcon from '@mui/icons-material/LiveHelpRounded';
 import ModeEditRoundedIcon from '@mui/icons-material/ModeEditRounded';
 import Stack from '@mui/material/Stack';
-import "../styles/popup.css"
+import "./CSS/popup.css"
 
 import {Ques} from "./ques_pop";
 import {Post} from "./post_pop";
 import { useState } from 'react';
 import { StyledEngineProvider } from '@mui/material';
-import { Show_ques } from './show_ques';
+import { Showques } from './show_ques';
 
 export const BasicModal = () => {
   const [open, setOpen] = useState(false);
@@ -21,10 +21,10 @@ export const BasicModal = () => {
   const [show, setShow] = useState(true);
   return (
     <div>
-      <Button onClick={() => {
+      <button className="btn"onClick={() => {
           setOpen(true)
-      }}>Open modal</Button>
-      <Show_ques/>
+      }}>Add Questions</button> 
+
       <Modal
         open={open}
         // onClose={handleClose}

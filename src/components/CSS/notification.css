@@ -3,6 +3,11 @@
   display: flex;
   gap: 2%;
   margin-top: 2%;
+  background-color: white;
+}
+body{
+  background-color: white;
+
 }
 .notification_option {
   display: flex;
@@ -56,21 +61,21 @@
   font-weight: 400;
   font-size: 13px;
 }
-
-
+.notbar{
+  display: flex;
+  flex-direction: column;
+}
 
 .notificationBox{
   display: flex;
   flex-direction: column;
  padding:10px ;
- border-top: 1px solid lightgray;
+
  border-bottom: 1px solid lightgray;
  background-color: white;
- border-radius: 5px;
  cursor: pointer;
  width: 40%;
- height: 100px;
- border:2px solid black;
+ height: 130px;
 }
 .notificationBox :hover{
   background-color: whitesmoke;
@@ -78,6 +83,9 @@
 
 .notificationBox_inf{
   display: flex;
+  border-top: 1px solid lightgray;
+  margin-top: 5px;
+  padding-top: 10px;
 align-items: center;
  }
  .notificationBox_inf  h5>{

@@ -7,9 +7,6 @@ import { Spaces} from "./components/spaces";
 import {Answers } from "./components/answers.jsx";
 import {Notification} from "./components/notification";
 
-
-
-
 function App() {
   return (
     <div className="App">

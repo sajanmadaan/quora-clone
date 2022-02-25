@@ -1,4 +1,4 @@
-import "../styles/popup.css";
+import "./CSS/popup.css"
 import AccountCircleRoundedIcon  from '@mui/icons-material/AccountCircleRounded';
 import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
 import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';

@@ -1,4 +1,4 @@
-import "../styles/popup.css";
+import "./CSS/popup.css"
 import {Stack, IconButton , Button, Input } from '@mui/material';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import LanguageRoundedIcon from '@mui/icons-material/LanguageRounded';

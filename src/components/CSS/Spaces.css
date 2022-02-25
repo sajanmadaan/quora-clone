@@ -4,14 +4,15 @@
 
 #contain_spaces{
     margin-top:2%;
-    margin-left: 8%;
+    margin-left: 12%;
 }
 
 
 #first_box {
     background-color: white;
-    height:150px;
-    border-radius: 10x;
+    height:130px;
+    border-radius: 20px;
+    padding:10px;
     text-align: left;
     background-image: url("https://qsf.fs.quoracdn.net/-4-ans_frontend_assets.images.tribes.tribe_welcome_banner_full.png-26-64d500fd69494b66.png");
     background-position: right bottom;
@@ -34,7 +35,7 @@
   height: 250px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 250px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .create_space{
