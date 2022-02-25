@@ -1,7 +1,7 @@
 import React from 'react'
 import "./CSS/Feed.css"
 import QuoraBox from './QuoraBox'
-import  Post  from './Post'
+import  {Post}  from './Post.jsx'
 
 function Feed() {
   return (

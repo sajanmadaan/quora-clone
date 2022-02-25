@@ -2,12 +2,13 @@ import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import LanguageIcon from "@material-ui/icons/Language";
 import { Avatar } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import './CSS/Navbar.css'
 function Navbar() {
   return (
     <div className="qhead">
       <div className="qlogo">
-        <img
+        <img 
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Quora_logo_2015.svg/250px-Quora_logo_2015.svg.png"
           alt=""
         />
@@ -29,7 +30,7 @@ function Navbar() {
       </div>
 
       <div className="qicons">
-        <div className="q_icon">
+       <Link to="/"> <div className="q_icon">
           {/* <span class="CssComponent__CssInlineComponent-sc-1oskqb9-1 Icon___StyledCssInlineComponent-sc-11tmcw7-0 iWPcnl"> */}
             <svg
               width="24"
@@ -45,10 +46,10 @@ function Navbar() {
               ></path>
             </svg>
           {/* </span> */}
-        </div>
+        </div></Link>
 
 
-        <div className="q_icon">
+        <Link to="/following"><div className="q_icon">
           {/* <FeaturedPlayListOutlinedIcon/> */}
           <svg width="24px" height="24px" viewBox="0 0 24 24">
             <g
@@ -115,11 +116,11 @@ function Navbar() {
               </g>
             </g>
           </svg>
-        </div>
+        </div></Link>
 
 
 
-        <div className="q_icon">
+        <Link to="/answers"><div className="q_icon">
           {/* <AssignmentTurnedInOutlinedIcon/> */}
           {/* <span class="CssComponent__CssInlineComponent-sc-1oskqb9-1 Icon___StyledCssInlineComponent-sc-11tmcw7-0 eLItvt"> */}
             <svg
@@ -135,11 +136,11 @@ function Navbar() {
               ></path>
             </svg>
           {/* </span> */}
-        </div>
+        </div></Link>
 
 
 
-        <div className="q_icon">
+        <Link to="/spaces"><div className="q_icon">
           {/* <PeopleAltOutlinedIcon />   */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -153,11 +154,11 @@ function Navbar() {
               fill="#636466"
             ></path>
           </svg>
-        </div>
+        </div></Link>
 
 
 
-        <div className="q_icon">
+        <Link to="/notification"><div className="q_icon">
           {/* <NotificationsOutlinedIcon /> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -171,15 +172,17 @@ function Navbar() {
               fill="#636466"
             ></path>
           </svg>
-        </div>
+        </div></Link>
 
-
+    
         
         <div className="input_icon">
           {/* <NotificationsOutlinedIcon /> */}
           <SearchIcon />
           <input type="text" placeholder="Search Quora" />
+
         </div>
+        <button className="btn1">Try Quora +</button>
         <div className="rem_icon">
           <div className="q_avtar">
             <Avatar />
