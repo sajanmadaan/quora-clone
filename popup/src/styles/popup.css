@@ -1,0 +1,128 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    text-decoration: none;
+}
+
+
+
+.newaddbtn:hover{
+   
+    background-color: black;
+    color: white;
+   
+}
+
+#blackdiv{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    /* border: 1px solid brown; */
+   opacity: 1;
+   /* pointer-events: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 20;
+   
+ }
+
+#popdiv{
+   
+    border: 1px solid white;
+    display: block;
+    border-radius: 2%;
+    background-color: white;
+    height: 80%;
+    width: 50%;
+    position: relative;
+    margin: auto;
+   margin-top: 5%;
+    /* padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px; */
+}
+
+#close_btn{
+    margin-left: 0;
+}
+
+.two_btns{
+    width: 50%;
+    border-bottom: 2px solid;
+}
+
+.acceptbtn{
+
+    margin-top: 40px;
+    margin-left: 38%;
+    
+}
+
+.blue_div {
+   background-color:  #ebf0ff ;
+   border: 1px solid #ebf0ff;
+   color: #2e69ff;
+   width: 80%;
+   margin: auto;
+   border-radius: 1%;
+   margin-top: 20px;
+   
+}
+
+.blue_div h4 {
+    margin-left: 20px;
+  
+}
+
+
+.profile_input{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.bottom_div{
+    position: absolute; 
+    bottom: 10px;
+    /* border: 1px solid black; */
+    width: 100%;
+   text-align: right;
+}
+
+.bottom_div hr{
+    height: 1px;
+    border:0;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.post_show_div{
+    /* border: 1px solid black; */
+    height: 360px;
+    margin-top: 20px;
+    text-align: center;
+    overflow: scroll;
+}
+
+.post_show_div textarea{
+    width: 80%; 
+    height: 50%;
+}
+
+.post_show_div img {
+    width: 80%;
+    text-align: center;
+}
+.bottom_div label{
+    float: left;
+}
+#file-input{
+    display: none;
+    float: left;
+}
