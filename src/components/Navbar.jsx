@@ -14,6 +14,8 @@ function Navbar() {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Quora_logo_2015.svg/250px-Quora_logo_2015.svg.png"
           alt=""
         />
+
+       
         {/* <span class="CssComponent__CssInlineComponent-sc-1oskqb9-1 Logo___StyledCssInlineComponent-sc-1pxybtk-0 diriSt">
           <svg width="202px" height="115px" viewBox="0 0 202 115">
             <g

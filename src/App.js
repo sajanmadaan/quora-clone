@@ -12,6 +12,7 @@ import {Notification} from "./components/notification";
 function App() {
   return (
     <div className="App">
+
       <Routes>
       <Route path="/" element={<Quoranav/>} />
       <Route path="/following" element={<Following/>} />
@@ -19,8 +20,8 @@ function App() {
       <Route path="/spaces" element={<Spaces/>} />
       <Route path="/notification" element={<Notification/>} />
       </Routes>
+
     </div>
   );
 }
-
 export default App;

@@ -1,9 +1,11 @@
 import React from 'react'
 import "./CSS/WidgetOp.css"
 function WidgetOptfollowing() {
-  return(
+  return (
     <div className="widget__contents">
-      
+      {/* Set up Account */}
+
+      {/* Spaces to follow */}
       <div className="widget__content">
         <img
           src="https://qphs.fs.quoracdn.net/main-thumb-ti-1737435-100-jxcfmjdvwvpkcketifttdmeeimxcatua.jpeg"
@@ -70,9 +72,7 @@ function WidgetOptfollowing() {
           <p>Everything about investing in Stock...</p>
         </div>
       </div>
-      
     </div>
-
   );
 }
 
