@@ -6,10 +6,21 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Input from '@mui/material/Input';
+import { useState } from "react";
+import axios from "axios";
+import {  useDispatch } from "react-redux";
+import { recent_ques } from "../redux/action";
 const ariaLabel = { 'aria-label': 'description' };
 
-export const Ques = () => {
 
+export const Ques = ({close}) => {
+  const dispatch = useDispatch();
+const [text, setText] = useState("");
+const addQues = (data) => {
+  axios.post("https://quora-clone-api-masai.herokuapp.com/question",data )
+  .then( (res) => {console.log(res.data); dispatch(recent_ques(res.data.ques_dec)) })
+  .catch( (err) => {console.log(err)})
+}
     return (
         <div>
             <div className="blue_div">
@@ -44,7 +55,11 @@ export const Ques = () => {
       noValidate
       autoComplete="off"
     >
-      <Input fullWidth  placeholder="Start your question with What, How, Why, etc." inputProps={ariaLabel} />
+      <Input fullWidth onChange={
+        (e) => {
+          setText(e.target.value)
+        }
+      } placeholder="Start your question with What, How, Why, etc." inputProps={ariaLabel} />
     </Box>
     </div>
       <div className="bottom_div">
@@ -52,11 +67,19 @@ export const Ques = () => {
           <Button  sx={{
     borderRadius: '20px',
     color: 'grey.500',
-  }} variant="text">Cancel</Button>
+  }} variant="text"  >Cancel</Button>
+
           <Button  sx={{
     borderRadius: '20px',
 
-  }}variant="contained">Add Question</Button>
+  }}  onClick= {
+    () => {
+      addQues({
+        user_id:"6215e624868e57aeb11983d3",
+        ques_dec: text
+      })
+    }
+  } variant="contained">Add Question</Button>
       </div>
         </div>
     );

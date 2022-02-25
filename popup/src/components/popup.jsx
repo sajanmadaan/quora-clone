@@ -13,19 +13,18 @@ import {Ques} from "./ques_pop";
 import {Post} from "./post_pop";
 import { useState } from 'react';
 import { StyledEngineProvider } from '@mui/material';
-
+import { Show_ques } from './show_ques';
 
 export const BasicModal = () => {
   const [open, setOpen] = useState(false);
-//   const handleOpen = () => setOpen(true);
-//   const handleClose = () => setOpen(false);
-
-  const [show, setShow] = useState(false);
+  const handleClose = () => setOpen(false);
+  const [show, setShow] = useState(true);
   return (
     <div>
       <Button onClick={() => {
           setOpen(true)
       }}>Open modal</Button>
+      <Show_ques/>
       <Modal
         open={open}
         // onClose={handleClose}
@@ -67,7 +66,7 @@ export const BasicModal = () => {
     </Stack>
 
     {
-        show ? <Ques/> : <Post/>
+        show ? <Ques close={handleClose}/> : <Post/>
     }
        </div>
   
