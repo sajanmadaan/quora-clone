@@ -1,11 +1,11 @@
 import React from 'react'
 import "./CSS/WidgetOp.css"
-function WidgetOpt() {
+function WidgetOptfollowing() {
   return (
     <div className="widget__contents">
       {/* Set up Account */}
 
-       {/* Spaces to follow */}
+      {/* Spaces to follow */}
       <div className="widget__content">
         <img
           src="https://qphs.fs.quoracdn.net/main-thumb-ti-1737435-100-jxcfmjdvwvpkcketifttdmeeimxcatua.jpeg"
@@ -13,6 +13,7 @@ function WidgetOpt() {
         />
         <div className="widget__contentTitle">
           <h5>Mobile App Programmer</h5>
+          <p>938k Followers</p>
           <p>The best Mobile App Development Company</p>
         </div>
       </div>
@@ -23,6 +24,7 @@ function WidgetOpt() {
         />
         <div className="widget__contentTitle">
           <h5>Quota of Quotes</h5>
+          <p>838k Followers</p>
           <p>Daily dosage of unforgettable lines from ...</p>
         </div>
       </div>
@@ -32,8 +34,20 @@ function WidgetOpt() {
           alt=""
         />
         <div className="widget__contentTitle">
-          <h5>Art & Artist</h5>
+          <h5>Art and Artist</h5>
+          <p>987k Followers</p>
           <p>A Space retated to creating, practicing an...</p>
+        </div>
+      </div>
+      <div className="widget__content">
+        <img
+          src="https://qphs.fs.quoracdn.net/main-thumb-ti-1711686-100-glvgnbatdxpjbhrkyphlfamqrryfccvp.jpeg"
+          alt=""
+        />
+        <div className="widget__contentTitle">
+          <h5>Architecture World</h5>
+          <p>1938k Followers</p>
+          <p>All about civil architecture...</p>
         </div>
       </div>
       <div className="widget__content">
@@ -43,6 +57,7 @@ function WidgetOpt() {
         />
         <div className="widget__contentTitle">
           <h5>Friedrich Nietzche</h5>
+          <p>38k Followers</p>
           <p>A Space dedicated to great work of Friedrich...</p>
         </div>
       </div>
@@ -53,21 +68,12 @@ function WidgetOpt() {
         />
         <div className="widget__contentTitle">
           <h5>Stock Market Strategies</h5>
+          <p>980k Followers</p>
           <p>Everything about investing in Stock...</p>
-        </div>
-      </div>
-      <div className="widget__content">
-        <img
-          src="https://qphs.fs.quoracdn.net/main-thumb-ti-1711686-100-glvgnbatdxpjbhrkyphlfamqrryfccvp.jpeg"
-          alt=""
-        />
-        <div className="widget__contentTitle">
-          <h5>Architecture World</h5>
-          <p>All about civil architecture...</p>
         </div>
       </div>
     </div>
   );
 }
 
-export default WidgetOpt
+export default WidgetOptfollowing

@@ -1,0 +1,65 @@
+.spaces{
+    background-color: #f1f2f2;
+}
+
+#contain_spaces{
+    margin-top:2%;
+    margin-left: 8%;
+}
+
+
+#first_box {
+    background-color: white;
+    height:150px;
+    border-radius: 10x;
+    text-align: left;
+    background-image: url("https://qsf.fs.quoracdn.net/-4-ans_frontend_assets.images.tribes.tribe_welcome_banner_full.png-26-64d500fd69494b66.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    width:60%;
+}
+#first_box > h3, #first_box > p {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.d_Spaces{
+    margin-bottom: 20px;
+}
+
+.d_grid{
+  display: grid;
+  width:60%;
+  height: 250px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 250px;
+  margin-bottom: 50px;
+}
+
+.create_space{
+    padding: 4px;
+    border: 0.5px solid royalblue;
+    border-radius: 20px;
+    background-color: white;
+    color: royalblue;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+
+.d_Spaces_img{
+    width: 100%;
+    height: 25%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.d_Spaces_div{
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}

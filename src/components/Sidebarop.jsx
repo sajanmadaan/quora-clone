@@ -53,26 +53,26 @@ function Sidebarop() {
           alt=""
         />
         <p>Music</p>
-      </div> */}
+      </div>
 
       {/* //Science */}
-      {/* <div className="sidebarOP">
+      <div className="sidebarOP">
         <img
           src="https://qphs.fs.quoracdn.net/main-thumb-t-931-100-c8WCPwZ9qPsh5zLGQ5wHh1ddxtc9Cch7.jpeg"
           alt=""
         />
         <p>Science</p>
-      </div> */}
+      </div> 
 
       {/* //Heaith */}
 
-      {/* <div className="sidebarOP">
+      <div className="sidebarOP">
         <img
           src="https://qphs.fs.quoracdn.net/main-thumb-t-1140-100-24q3tiv4WhPssc5TGwf0mvCM5aiqGVXW.jpeg"
           alt=""
         />
         <p>Health</p>
-      </div> */}
+      </div>
 
       {/* //Tech */}
       <div className="sidebarOP">
@@ -85,12 +85,13 @@ function Sidebarop() {
 
       {/* //Education */}
 
+      
       <div className="sidebarOP">
         <img
           src="https://qphs.fs.quoracdn.net/main-thumb-t-996-100-bfZBQjeEenKKl8fcNY4tVv0FyArtB0Mb.jpeg"
           alt=""
         />
-        <p>Education</p>
+        <p>Tweets</p>
       </div>
 
       <div className="sidebarOP">
