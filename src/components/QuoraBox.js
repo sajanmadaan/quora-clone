@@ -6,7 +6,7 @@ function QuoraBox() {
   return (
       <div className='quoraBox'>
           <div className='quoraBox_inf'>
-              <Avatar />
+              < Avatar />
               <h5>Username</h5>
           </div>
           <div className='quoraBox_quora'>

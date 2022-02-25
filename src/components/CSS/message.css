@@ -1,0 +1,67 @@
+/** @format */
+
+.messageBox {
+  position: fixed;
+  bottom: 0px;
+  right: 4%;
+  width: 350px;
+  height: 450px;
+  background-color: white;
+  border: 1px solid #dee0e1;
+  border-radius: 4px;
+  transition: 0.3s;
+  transform: translateY(415px);
+}
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dee0e1;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.bar > div:last-child {
+  display: flex;
+  gap: 20px;
+}
+.bar > div:last-child >div:last-child{
+    transition: 0.3s;
+    transform: rotate(-180deg);
+}
+.content > div > img {
+  width: 100%;
+}
+.content > div {
+  width: 85%;
+  text-align: center;
+  margin: 15px auto;
+  color: #636466;
+}
+.content>div:nth-child(2){
+    font-weight: bold;
+    font-size: 21px;
+}
+.content>div:nth-child(3){
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+}
+.content > div:first-child {
+  width: 40%;
+  margin: auto;
+}
+.content button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 30px;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  background-color: #2e69ff;
+}
+.content {
+  margin-top: 30px;
+}

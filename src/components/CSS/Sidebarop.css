@@ -36,4 +36,20 @@
   font-weight: 400;
   font-size: 13px;
 }
+.Last_div{
+  display: flex;
+  flex-direction: column;
+  color: rgb(148, 145, 145);
+  padding-left: 30px;
+}
+.line{
+  color: rgb(238, 238, 238);
+}
+.Last_div>h6{
+   cursor: pointer;
+}
+.Last_div>h6:hover{
+  text-decoration: underline;
+}
+
 
