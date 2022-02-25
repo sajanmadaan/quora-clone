@@ -20,7 +20,7 @@
     width: 20px;
     height: 20px;
    }
-   .quoraBox_inf > p {
+   .quoraBox_inf > h5{
    color: rgb(129, 129, 129);
    font-size: 13px;
    margin-right: 60%;
@@ -36,3 +36,6 @@
       font-size: large;
     
    }
+  .quoraBox_inf > .MuiSvgIcon-roo{
+    background-color: red;
+  }

@@ -1,23 +1,22 @@
 import React from 'react'
 import "./CSS/Sidebarop.css"
 import { Add } from "@material-ui/icons";
+import About from './Last_div/About';
 
 function Sidebarop() {
   return (
-    <div className='sidebar_option'>
+    <div className="sidebar_option">
       <div className="sidebarOP">
-       <Add/>
-        <p className="text">Create Spaces</p>
+        <img
+          src="https://qphs.fs.quoracdn.net/main-thumb-t-931-100-c8WCPwZ9qPsh5zLGQ5wHh1ddxtc9Cch7.jpeg"
+          alt=""
+        />
+        <p>Science</p>
       </div>
 
-        <div className='sidebarOP'>
-        <img src="https://qphs.fs.quoracdn.net/main-thumb-t-931-100-c8WCPwZ9qPsh5zLGQ5wHh1ddxtc9Cch7.jpeg" alt=''/>  
-        <p>Science</p>
-        </div>
+      {/* //Bussiness */}
 
-        {/* //Bussiness */}
-
-        <div className="sidebarOP">
+      <div className="sidebarOP">
         <img
           src="https://qphs.fs.quoracdn.net/main-thumb-t-1026-100-ohvgqriqzmtjrnillbxqoyfstjxhmlcu.jpeg"
           alt=""
@@ -26,9 +25,9 @@ function Sidebarop() {
         <p>Food</p>
       </div>
 
-       {/* //psy */}
+      {/* //psy */}
 
-       <div className="sidebarOP">
+      <div className="sidebarOP">
         <img
           src="https://qphs.fs.quoracdn.net/main-thumb-t-1140-100-24q3tiv4WhPssc5TGwf0mvCM5aiqGVXW.jpeg"
           alt=""
@@ -37,14 +36,6 @@ function Sidebarop() {
       </div>
 
       {/* //cooking */}
-      <div className="sidebarOP">
-        <img
-          src="https://qphs.fs.quoracdn.net/main-thumb-t-996-100-bfZBQjeEenKKl8fcNY4tVv0FyArtB0Mb.jpeg"
-          alt=""
-        />
-        <p>Education</p>
-      </div>
-
 
       <div className="sidebarOP">
         <img
@@ -53,10 +44,10 @@ function Sidebarop() {
         />
         <p>Movies</p>
       </div>
- 
-       {/* //Music */}
 
-       <div className="sidebarOP">
+      {/* //Music */}
+
+      {/* <div className="sidebarOP">
         <img
           src="https://qphs.fs.quoracdn.net/main-thumb-t-801-100-Sf8h894FXbQZQit0TeqDrrqS6xw6dwCQ.jpeg"
           alt=""
@@ -71,8 +62,8 @@ function Sidebarop() {
           alt=""
         />
         <p>Science</p>
-      </div>
-      
+      </div> 
+
       {/* //Heaith */}
 
       <div className="sidebarOP">
@@ -83,7 +74,6 @@ function Sidebarop() {
         <p>Health</p>
       </div>
 
-    
       {/* //Tech */}
       <div className="sidebarOP">
         <img
@@ -92,7 +82,7 @@ function Sidebarop() {
         />
         <p>Technology</p>
       </div>
-      
+
       {/* //Education */}
 
       
@@ -104,14 +94,25 @@ function Sidebarop() {
         <p>Tweets</p>
       </div>
 
-
-       
-       <div className="sidebarOP">
-       <Add/>
+      <div className="sidebarOP">
+        <Add />
         <p className="text">Discover Spaces</p>
       </div>
+      {/* div part */}
+
+      <hr className="line"></hr>
+      <div className="Last_div">
+        <h6> About.</h6>
+        <h6>Careers.</h6>
+        <h6>Terms.</h6>
+        <h6>Privacy.</h6>
+        <h6>Acceptable Use.</h6>
+        <h6>Businesses.</h6>
+        <h6>Press.</h6>
+        <h6>Your Ad Choices</h6>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Sidebarop
