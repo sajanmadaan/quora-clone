@@ -66,7 +66,7 @@ export const BasicModal = () => {
     </Stack>
 
     {
-        show ? <Ques close={handleClose}/> : <Post/>
+        show ? <Ques close={handleClose}/> : <Post  close={handleClose}/>
     }
        </div>
   

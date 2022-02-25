@@ -1,15 +1,14 @@
 import "../styles/popup.css";
-import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
+import AccountCircleRoundedIcon  from '@mui/icons-material/AccountCircleRounded';
 import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
-import IconButton from '@mui/material/IconButton';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
-import Input from '@mui/material/Input';
+import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
+import {IconButton, Button,Stack , Box ,Input} from '@mui/material';
+
 import { useState } from "react";
 import axios from "axios";
 import {  useDispatch } from "react-redux";
-import { recent_ques } from "../redux/action";
+import { recent_ques } from "../redux/ques_redux/action";
+import {local_store} from "../utils/localstorage";
 const ariaLabel = { 'aria-label': 'description' };
 
 
@@ -34,14 +33,15 @@ const addQues = (data) => {
 
             <div className="profile_input">
             <Stack direction="row" spacing={2}>
-            <IconButton aria-label="redirect to profile" disabled color="primary" size="small">
+            <IconButton aria-label="redirect to profile"  color="primary" size="small">
              <AccountCircleRoundedIcon color="primary"/>
            </IconButton>
 
            <Button  sx={{
     borderRadius: '20px',
     color: 'grey.500',
-  }} variant="outlined" startIcon={<PeopleAltRoundedIcon/>}>
+    borderColor: 'grey.500',
+  }} variant="outlined" startIcon={<PeopleAltRoundedIcon/>} endIcon={<KeyboardArrowDownRoundedIcon />}>
         Public
       </Button>
       </Stack>
@@ -67,7 +67,11 @@ const addQues = (data) => {
           <Button  sx={{
     borderRadius: '20px',
     color: 'grey.500',
-  }} variant="text"  >Cancel</Button>
+  }} variant="text" onClick={
+    () => {
+      close();
+    }
+  } >Cancel</Button>
 
           <Button  sx={{
     borderRadius: '20px',
@@ -77,7 +81,9 @@ const addQues = (data) => {
       addQues({
         user_id:"6215e624868e57aeb11983d3",
         ques_dec: text
-      })
+      });
+     local_store("recent_ques" ,text);
+      close();
     }
   } variant="contained">Add Question</Button>
       </div>

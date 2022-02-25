@@ -107,10 +107,22 @@
     height: 360px;
     margin-top: 20px;
     text-align: center;
+    overflow: scroll;
 }
 
-textarea{
-    width: 95%;
-   
+.post_show_div textarea{
+    width: 80%; 
     height: 50%;
+}
+
+.post_show_div img {
+    width: 80%;
+    text-align: center;
+}
+.bottom_div label{
+    float: left;
+}
+#file-input{
+    display: none;
+    float: left;
 }
