@@ -12,25 +12,28 @@ import { Link } from "react-router-dom";
 export const Post = () =>  {
 
   const [text,setText] = useState([]);
+  const [can,setCan] = useState(true);
     useEffect(() => {
-    getData();
-    function getData() {
+      if(can){
       fetch(`https://quora-clone-api-masai.herokuapp.com/post`)
-        .then((res) => res.json())
-        .then((text) => setText(text));
-    }
+      .then((res) => res.json())
+      .then((text) =>setText(text));
+      }
+      return () => setCan(false); 
   }, []);
+
 
 
 
   return (
     <div>
     {text.map((e, index) => (
+     
     <div className="post">
       <div className='Avtaaruser'>
         <div>
        <Avatar /></div>
-       <div> <h5> {e.user_id.first_name}&nbsp; <Link to="#"> Follow</Link></h5>
+       <div> <h5> {e.user_id.first_name} &nbsp; <Link to="#"> Follow</Link></h5>
         <p>{e.user_id.title}</p></div>
         </div>
       <div className="post_inf">
@@ -47,13 +50,12 @@ export const Post = () =>  {
       </div>
       <div className="post_footer">
         <div className="post_footerAction">
-          <ArrowUpwardOutlinedIcon /> 
+          <ArrowUpwardOutlinedIcon /> {e.answer_id.votes}
           <ArrowDownwardOutlinedIcon />
         </div>
         <div className="post_footerAction2">
-          <RepeatOutlinedIcon />
-          <ChatBubbleOutlineOutlinedIcon />
- 
+          <RepeatOutlinedIcon />{e.answer_id.share}
+          <ChatBubbleOutlineOutlinedIcon />{e.answer_id.votes}
         </div>
         
         
