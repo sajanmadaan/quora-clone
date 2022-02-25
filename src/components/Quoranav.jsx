@@ -4,6 +4,8 @@ import Navbar from './Navbar'
 import Sidebar from './Sidebar'
 import Widget from "./Widget";
 import "./CSS/Quoranav.css"
+import { Message } from './message';
+
 
 
 
@@ -15,7 +17,8 @@ function Quoranav() {
       <div className='quora_con'>
         <Sidebar />
         <Feed />
-        <Widget/>
+        <Widget />
+        <Message/>
       </div>
     </div>
   )

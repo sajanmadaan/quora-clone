@@ -7,9 +7,8 @@ function QuoraBox() {
   return (
       <div className='quoraBox'>
           <div className='quoraBox_inf'>
-            <div className="quoraAvtaar">
-              <Avatar /></div>
-              <p>Username</p>
+              < Avatar />
+              <h5>Username</h5>
           </div>
           <div className='quoraBox_quora'>
               <h5>What is your question or link?</h5>
