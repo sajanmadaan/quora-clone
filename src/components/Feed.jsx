@@ -8,12 +8,6 @@ function Feed() {
     <div className="feed">
       <QuoraBox />
       <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
     </div>
   );
 }

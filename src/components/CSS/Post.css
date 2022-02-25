@@ -70,12 +70,12 @@
 }
 .post_footerAction > .MuiSvgIcon-root{
    color: gray;
-   margin-right: 40px;
+   
    cursor: pointer;
 }
 .post_footerAction > .MuiSvgIcon-root:hover{
-   color: #8f1f18;;
-   margin-right: 40px;
+   color: blue;
+
    cursor: pointer;
 }
 
@@ -83,11 +83,12 @@
     display: flex;
     padding: 5px;
     align-items: center;
-    margin-right: 40px;
+    
 }
 .post_footerAction2 > .MuiSvgIcon-root{
    color: gray;
    cursor: pointer;
+   margin-left: 20px;
 }
 .post_footerAction2 > .MuiSvgIcon-root:hover{
    color: #8f1f18;;
