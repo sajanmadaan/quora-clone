@@ -20,6 +20,7 @@ const addQues = (data) => {
   .then( (res) => {console.log(res.data); dispatch(recent_ques(res.data.ques_dec)) })
   .catch( (err) => {console.log(err)})
 }
+
     return (
         <div>
             <div className="blue_div">
