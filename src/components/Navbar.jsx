@@ -1,10 +1,12 @@
+/** @format */
+
 import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import LanguageIcon from "@material-ui/icons/Language";
 import { Avatar } from "@material-ui/core";
 import { Link, useNavigate } from "react-router-dom";
-import './CSS/Navbar.css'
-import {BasicModal} from "./popup.jsx";
+import "./CSS/Navbar.css";
+import { BasicModal } from "./popup.jsx";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -143,6 +145,7 @@ function Navbar() {
             </svg>
             {/* </span> */}
           </div>
+          <div className="flo">Answer</div>
         </Link>
 
         <Link to="/spaces">
@@ -161,6 +164,7 @@ function Navbar() {
               ></path>
             </svg>
           </div>
+          <div className="flo">Spaces</div>
         </Link>
 
         <Link to="/notification">
@@ -179,6 +183,7 @@ function Navbar() {
               ></path>
             </svg>
           </div>
+          <div className="flow">Notifications</div>
         </Link>
 
         <div className="input_icon">
