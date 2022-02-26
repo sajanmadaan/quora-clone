@@ -32,16 +32,45 @@ export const Post = () =>  {
 
   return (
     <div>
-    {text.map((e, index) => (
-     
-    <div className="post">
-      <div className='Avtaaruser'>
-        <div>
-       <Avatar /></div>
-       <div> <h5> {e.user_id.first_name} &nbsp; <Link to="#"> Follow</Link></h5>
-        <p>{e.user_id.title}</p></div>
-        </div>
-      <div className="post_inf">
+      {text.map((e, index) => (
+        <div className="post">
+          <div className="Avtaaruser">
+            <div>
+              <Avatar />
+            </div>
+            <div>
+              {" "}
+              <h5>
+                {" "}
+                {e.user_id.first_name} &nbsp; <Link to="#"> Follow</Link>
+              </h5>
+              <p>{e.user_id.title}</p>
+            </div>
+          </div>
+          <div className="post_inf">
+            <div className="post_body">
+              <div className="post_que">
+                <h3>{e.post_que}</h3>
+                <p>{e.post_dec}</p>
+              </div>
+              <div className="post_answer">
+                <img src={e.image} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="post_footer">
+            <div className="flo">Upvotes</div>
+            <div className="post_footerAction">
+              <ArrowUpwardOutlinedIcon /> {e.answer_id.votes}
+              <ArrowDownwardOutlinedIcon />
+            </div>
+            <div className="post_footerAction2">
+              <RepeatOutlinedIcon />
+              {e.answer_id.share}
+              <ChatBubbleOutlineOutlinedIcon />
+              {e.answer_id.votes}
+            </div>
+
 
       <div className="post_body">
         <div className="post_que">
@@ -109,5 +138,17 @@ export const Post = () =>  {
   </div>))};
   </div>
 )};
+
+            <div className="post__footerLeft">
+              <ShareOutlined />
+              <MoreHorizOutlined />
+            </div>
+          </div>
+        </div>
+      ))}
+      ;
+    </div>
+  );};
+
 
 
