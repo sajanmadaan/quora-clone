@@ -1,5 +1,5 @@
 import React from 'react'
-import "./CSS/WidgetOp.css"
+import "./CSS/Widget_following.css"
 function WidgetOptfollowing() {
   return (
     <div className="widget__contents">

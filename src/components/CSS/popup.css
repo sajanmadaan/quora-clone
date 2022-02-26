@@ -5,14 +5,10 @@
     text-decoration: none;
 }
 .btn {
+    background: transparent;
+    border: none;
     color: white;
-    margin-left: 25px;
-    text-transform: inherit;
-    padding:10px;
-    background: #b92b27;
-    border-radius: 20px;
     cursor: pointer;
-    font-weight: bold;
 }
 
 

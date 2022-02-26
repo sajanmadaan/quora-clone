@@ -6,6 +6,8 @@ import { Following } from "./components/following";
 import { Spaces} from "./components/spaces";
 import {Answers } from "./components/answers.jsx";
 import {Notification} from "./components/notification";
+import {Quorasearch} from "./components/Quorasearch.jsx"
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <Route path="/answers" element={<Answers/>} />
       <Route path="/spaces" element={<Spaces/>} />
       <Route path="/notification" element={<Notification/>} />
+      <Route path="/search" element={<Quorasearch/>} />
       </Routes>
 
     </div>
