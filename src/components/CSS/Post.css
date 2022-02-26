@@ -6,6 +6,7 @@
     border: 1px solid lightgray;
     border-radius: 5px;
     margin-top: 10px;
+    margin-left: 20px;
 }
 .Avtaaruser >div > .MuiAvatar-circular{
     background-color: purple;

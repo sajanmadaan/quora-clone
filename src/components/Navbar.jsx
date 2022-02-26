@@ -2,11 +2,12 @@ import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import LanguageIcon from "@material-ui/icons/Language";
 import { Avatar } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import './CSS/Navbar.css'
 import {BasicModal} from "./popup.jsx";
 
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <div className="qhead">
       <div className="qlogo">
@@ -50,15 +51,15 @@ function Navbar() {
               ></path>
             </svg>
           {/* </span> */}
-        </div></Link>
+          </div>
+        </Link>
 
 
         <Link to="/following"><div className="q_icon">
           {/* <FeaturedPlayListOutlinedIcon/> */}
-          <svg width="24px" height="24px" viewBox="0 0 24 24">
+          <svg width="24" height="24" viewBox="0 0 24 24">
             <g
-              stroke="none"
-              class="icon_svg-fill_as_stroke"
+                class="icon_svg-fill_as_stroke"
               fill="#636466"
               fill-rule="nonzero"
             >
@@ -183,7 +184,14 @@ function Navbar() {
         <div className="input_icon">
           {/* <NotificationsOutlinedIcon /> */}
           <SearchIcon />
-          <input type="text" placeholder="Search Quora" />
+          <input type="text" placeholder="Search Quora" onKeyPress={function handlePress(e) {
+        if(e.key === "Enter"){
+       
+
+         navigate(`/search?q=${e.target.value}`)
+        }
+          
+      }} />
 
         </div>
         <button className="btn1">Try Quora +</button>
@@ -193,8 +201,8 @@ function Navbar() {
           </div>
           <LanguageIcon />
           
-         
-          <BasicModal/>
+         <div className="btn"><BasicModal/></div>
+          
         </div>
         
       </div>

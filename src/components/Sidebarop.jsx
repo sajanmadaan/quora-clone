@@ -7,6 +7,10 @@ function Sidebarop() {
   return (
     <div className="sidebar_option">
       <div className="sidebarOP">
+        <Add />
+        <p className="text">Create Spaces</p>
+      </div>
+      <div className="sidebarOP">
         <img
           src="https://qphs.fs.quoracdn.net/main-thumb-t-931-100-c8WCPwZ9qPsh5zLGQ5wHh1ddxtc9Cch7.jpeg"
           alt=""

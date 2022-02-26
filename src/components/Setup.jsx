@@ -5,7 +5,7 @@ import React from "react";
 function Setup() {
   return (
     <div className="setUpContent">
-      <div>Set Up Your Account</div>
+      <div>Improve Your Feed</div>
       <div className="tickBox">
         <div>
           <svg
@@ -16,7 +16,7 @@ function Setup() {
             <path
               d="m4 12.258 5.818 5.818L20 5"
               class="icon_svg-stroke"
-              stroke="#666"
+              stroke="green"
               stroke-width="1.5"
               fill="none"
               strokeLinecap="round"
@@ -30,17 +30,10 @@ function Setup() {
         <input type="checkbox" name="" id="" />
         <div>Follow 5 more Spaces</div>
       </div>
-      <div>
-        <input type="checkbox" name="" id="" />
-        <div>Upvote 5 more good pieces of content</div>
-      </div>
+
       <div>
         <input type="checkbox" name="" id="" />
         <div>Ask a question</div>
-      </div>
-      <div>
-        <input type="checkbox" name="" id="" />
-        <div>Add 3 credentials about where you live, work or study</div>
       </div>
       <div>
         <input type="checkbox" name="" id="" />
