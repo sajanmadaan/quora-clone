@@ -1,12 +1,16 @@
 .post{
     display: flex;
     flex-direction: column;
-    padding: 15px 0px;
+    padding: 15px 0px 0px 0px;
     background-color: white;
     border: 1px solid lightgray;
     border-radius: 5px;
     margin-top: 10px;
     margin-left: 20px;
+}
+
+.post:hover{
+    background-color: whitesmoke;
 }
 .Avtaaruser >div > .MuiAvatar-circular{
     background-color: purple;
@@ -19,8 +23,62 @@
 .Avtaaruser{
     display: flex;
     padding: 0px 15px;
-    gap: 8px;
+    gap: 0px 8px;
+
 }
+.Avtaarus{
+    display: flex;
+    gap: 0px 5px;
+}
+
+.Avtaaruse{
+    display: flex;
+    padding: 8px 10px;
+    gap: 0px 10px;
+   margin-top: 10px;
+   border-top: 2px solid whitesmoke;
+   background-color: whitesmoke;
+}
+.Avaaruse{
+    display: flex;
+    padding: 8px 10px;
+    gap: 0px 10px;
+   background-color: whitesmoke;
+   border-top: 2px solid whitesmoke;
+}
+.Avaaruse>div > .MuiAvatar-circular{
+    background-color: palevioletred;
+}
+.tvaaruse{
+    display: flex;
+    padding: 8px 10px;
+    gap: 0px 10px;
+    bottom: 0;
+   border-top: 2px solid whitesmoke;
+   background-color: whitesmoke;
+}
+.tvaaruse>div > .MuiAvatar-circular{
+    background-color: yellowgreen;
+}
+.Avtaarus {
+   width: 80%;
+}
+.Avtaarus >input {
+    border: none;
+    width: 80%;
+    border-radius: 10px;
+    padding-left: 10px;
+ }
+
+.Avtaaru > button {
+    background-color:#2e69ff;
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    padding: 5px 25px;
+    border: none;
+ }
+ 
 
 .post_body{
     display: flex;
@@ -50,7 +108,8 @@
 .post_footer{
    display: flex;
    align-items: center;
-   margin-top: 10px; 
+   color: gray;
+   margin-top: 5px; 
    width:96%;
    padding: 0px 10px;
   
@@ -64,8 +123,9 @@
     display: flex;
     justify-content: space-around;
     border-radius: 33px;
-    padding: 5px;
-    background-color: lightgray;
+    padding: 5px 10px;
+    color: gray;
+    background-color: rgb(243, 237, 237);
     align-items: center;
     margin-right: 15px;
 }
@@ -74,8 +134,8 @@
    
    cursor: pointer;
 }
-.post_footerAction > .MuiSvgIcon-root:hover{
-   color: blue;
+.post_footerAction> .MuiSvgIcon-root:first-child {
+   color: #2e69ff;
 
    cursor: pointer;
 }

@@ -11,8 +11,11 @@ import { Message } from './message';
 
 
 function Quoranav() {
+
+  
   return (
-    <div className='quora'>
+    <div className='quora' >
+
       <Navbar/>
       <div className='quora_con'>
         <Sidebar />
