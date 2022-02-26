@@ -3,14 +3,14 @@ import RssFeedRoundedIcon from '@mui/icons-material/RssFeedRounded';
 import EditOffRoundedIcon from '@mui/icons-material/EditOffRounded';
 import MoreHorizRoundedIcon from '@mui/icons-material/MoreHorizRounded';
 import { Button, IconButton ,Stack} from "@mui/material";
-
+import "./CSS/showques.css"
 export const Showques = () => {
-const ques = useSelector( (store) => store.ques);
+const ques = useSelector( (store) => store.reducer.ques);
 
     return (
-     <div style={{border: "1px solid black", width: "400px", margin: "auto"}}>
+     <div className="btn3">
          <p>You recently asked</p>
-         <h4>{ques}</h4>
+         <h3>{ques}</h3>
          <div>
          {/* <Stack direction="row" spacing={2}> */}
       <Button variant="text" sx={{ 
@@ -21,7 +21,7 @@ const ques = useSelector( (store) => store.ques);
 
       <Button variant="text" sx={{ 
            borderRadius: '20px',
-       color: 'grey.500' }} startIcon={<EditOffRoundedIcon />}>
+       color: 'grey.500',}} startIcon={<EditOffRoundedIcon />}>
         Pass
       </Button>
       

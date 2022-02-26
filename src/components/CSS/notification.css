@@ -3,16 +3,10 @@
   display: flex;
   gap: 2%;
   margin-top: 2%;
-  background-color: white;
-}
-body{
-  background-color: white;
-
 }
 .notification_option {
   display: flex;
   flex-direction: column;
-  background-color: white;
   border-radius: 10px;
   width:20%;
 
@@ -23,14 +17,12 @@ body{
     align-items: center;
     padding: 10px;
     cursor: pointer;
-    background-color: rgb(255, 235, 235);   
 }
 .notificationOP2 {
   display: flex;
   align-items: center;
   padding: 10px;
   cursor: pointer;
-  background-color: white;
   font-size: 17px;
   
 }
@@ -72,7 +64,6 @@ body{
  padding:10px ;
 
  border-bottom: 1px solid lightgray;
- background-color: white;
  cursor: pointer;
  width: 40%;
  height: 130px;

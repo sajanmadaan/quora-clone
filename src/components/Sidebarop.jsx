@@ -1,7 +1,6 @@
 import React from 'react'
 import "./CSS/Sidebarop.css"
 import { Add } from "@material-ui/icons";
-import About from './Last_div/About';
 
 function Sidebarop() {
   return (
