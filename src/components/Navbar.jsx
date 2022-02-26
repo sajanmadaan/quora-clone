@@ -41,8 +41,8 @@ function Navbar() {
           <div className="q_icon">
             {/* <span class="CssComponent__CssInlineComponent-sc-1oskqb9-1 Icon___StyledCssInlineComponent-sc-11tmcw7-0 iWPcnl"> */}
             <svg
-              width="24"
-              height="24"
+              width="28"
+              height="28"
               viewBox="0 0 24 24"
               // xmlns="http://www.w3.org/2000/svg"
             >
@@ -54,12 +54,13 @@ function Navbar() {
             </svg>
             {/* </span> */}
           </div>
+          <div className="flo">Home</div>
         </Link>
 
         <Link to="/following">
           <div className="q_icon">
             {/* <FeaturedPlayListOutlinedIcon/> */}
-            <svg width="24" height="24" viewBox="0 0 24 24">
+            <svg width="28" height="28" viewBox="0 0 24 24">
               <g
                 class="icon_svg-fill_as_stroke"
                 fill="#636466"
@@ -133,8 +134,8 @@ function Navbar() {
             {/* <span class="CssComponent__CssInlineComponent-sc-1oskqb9-1 Icon___StyledCssInlineComponent-sc-11tmcw7-0 eLItvt"> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="28"
+              height="28"
               viewBox="0 0 24 24"
             >
               <path
@@ -153,8 +154,8 @@ function Navbar() {
             {/* <PeopleAltOutlinedIcon />   */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="28"
+              height="28"
               viewBox="0 0 24 24"
             >
               <path
@@ -172,8 +173,8 @@ function Navbar() {
             {/* <NotificationsOutlinedIcon /> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="28"
+              height="28"
               viewBox="0 0 24 24"
             >
               <path
