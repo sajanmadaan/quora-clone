@@ -1,0 +1,104 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.Avtaaruser >div > .MuiAvatar-circular{
+    background-color: purple;
+}
+.post_inf{
+    display: flex;
+    align-items: center;
+    width:100%;
+}
+.Avtaaruser{
+    display: flex;
+    padding: 0px 15px;
+    gap: 8px;
+}
+
+.post_body{
+    display: flex;
+    flex-direction: column;
+    
+}
+.post_body > .post_que{
+    padding: 15px 15px 5px 15px;
+
+}
+.post_body > .post_que > h3{
+  margin-bottom: 10px;
+
+}
+
+.post_que > h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  
+  }
+.post_answer >img{
+    width: 100%;
+    height:400px;
+
+    
+}
+.post_footer{
+   display: flex;
+   align-items: center;
+   margin-top: 10px; 
+   width:96%;
+   padding: 0px 10px;
+  
+}
+.post_footer > .MuiSvgIcon-root{
+  color: gray;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.post_footerAction{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 33px;
+    padding: 5px;
+    background-color: lightgray;
+    align-items: center;
+    margin-right: 15px;
+}
+.post_footerAction > .MuiSvgIcon-root{
+   color: gray;
+   margin-right: 40px;
+   cursor: pointer;
+}
+.post_footerAction > .MuiSvgIcon-root:hover{
+   color: #8f1f18;;
+   margin-right: 40px;
+   cursor: pointer;
+}
+
+.post_footerAction2{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    margin-right: 40px;
+}
+.post_footerAction2 > .MuiSvgIcon-root{
+   color: gray;
+   cursor: pointer;
+}
+.post_footerAction2 > .MuiSvgIcon-root:hover{
+   color: #8f1f18;;
+   cursor: pointer;
+}
+.post__footerLeft{
+    margin-left: 45%;
+    color: gray;
+}
+.post_footerLeft>.MuiSvgIcon-root{
+    color: gray;
+    cursor: pointer;
+}
+

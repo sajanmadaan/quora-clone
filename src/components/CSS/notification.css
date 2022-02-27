@@ -1,0 +1,93 @@
+#main_Notification{
+  margin-left:8%;
+  display: flex;
+  gap: 2%;
+  margin-top: 2%;
+}
+.notification_option {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  width:20%;
+
+}
+
+.notificationOP1 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(255, 235, 235);   
+}
+.notificationOP2 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  font-size: 17px;
+  
+}
+
+.notificationOP1 > p {
+  margin-left: 10px;
+  color: maroon;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+
+.notificationOP {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.notificationOP:hover {
+  background: rgb(211, 211, 211);
+  border-radius: 5px;
+}
+
+.notificationOP > p {
+  margin-left: 10px;
+  color: gray;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+
+
+.notificationBox{
+  display: flex;
+  flex-direction: column;
+ padding:10px ;
+ border-top: 1px solid lightgray;
+ border-bottom: 1px solid lightgray;
+ background-color: white;
+ border-radius: 5px;
+ cursor: pointer;
+ width: 40%;
+ height: 100px;
+ border:2px solid black;
+}
+.notificationBox :hover{
+  background-color: whitesmoke;
+}
+
+.notificationBox_inf{
+  display: flex;
+align-items: center;
+ }
+ .notificationBox_inf  h5>{
+ color: rgb(129, 129, 129);
+ font-weight: 300;
+ margin-left: 10px;
+ }
+ .notificationBox_notification{
+     display: flex;
+     margin-top: 8px;
+     margin-bottom: 10px;
+ }
+
