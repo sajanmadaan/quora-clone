@@ -1,1 +1,0 @@
-export const RECENT_QUES = "RECENT_QUES";

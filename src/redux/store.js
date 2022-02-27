@@ -1,12 +1,18 @@
-import {createStore} from "redux";
-import {reducer} from "./ques_redux/reducer";
-import {Postreducer} from "./post_redux/reducer";
+import React from 'react'
+import {createStore} from 'redux'
+import rootReducer from './reducers/'
+import {Provider} from 'react-redux'
 
-import { combineReducers } from 'redux';
+const store = createStore(rootReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
 
-const rootreducer =  combineReducers({reducer, Postreducer})
+function DataProvider({children}) {
+    return (
+        <Provider store={store}>
+            {children}
+        </Provider>
+    )
+}
 
-export const store = createStore(rootreducer, 
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() );
-
-console.log(store.getState());
+export default DataProvider

@@ -1,29 +1,49 @@
-import React from "react";
-import './App.css';
-import { Route , Routes } from "react-router-dom";
-import Quoranav from "./components/Quoranav";
-import { Following } from "./components/following";
-import { Spaces} from "./components/spaces";
-import {Answers } from "./components/answers.jsx";
-import {Notification} from "./components/notification";
-import {Quorasearch} from "./components/Quorasearch.jsx"
+import React, {useEffect} from 'react';
+import {BrowserRouter as Router} from 'react-router-dom'
+import {useDispatch, useSelector} from 'react-redux'
+import {dispatchLogin, fetchUser, dispatchGetUser} from './redux/actions/authAction'
+
+import Header from './components/header/Header'
+import Body from './components/body/Body'
+import axios from 'axios';
+
 function App() {
+  const dispatch = useDispatch()
+  const token = useSelector(state => state.token)
+  const auth = useSelector(state => state.auth)
+
+  useEffect(() => {
+    const firstLogin = localStorage.getItem('firstLogin')
+    if(firstLogin){
+      const getToken = async () => {
+        const res = await axios.post('/users/refreshtoken', null)
+        dispatch({type: 'GET_TOKEN', payload: res.data.access_token})
+      }
+      getToken()
+    }
+  },[auth.isLogged, dispatch])
+
+  useEffect(() => {
+    if(token){
+      const getUser = () => {
+        dispatch(dispatchLogin())
+
+        return fetchUser(token).then(res => {
+          dispatch(dispatchGetUser(res))
+        })
+      }
+      getUser()
+    }
+  },[token, dispatch])
 
 
   return (
-    <div className="App">
-
-      <Routes>
-      <Route path="/" element={<Quoranav/>} />
-      <Route path="/following" element={<Following/>} />
-      <Route path="/answers" element={<Answers/>} />
-      <Route path="/spaces" element={<Spaces/>} />
-      <Route path="/notification" element={<Notification/>} />
-      <Route path="/search" element={<Quorasearch/>} />
-      </Routes>
-
-
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Body />
+      </div>
+    </Router>
   );
 }
 
