@@ -1,6 +1,6 @@
 import { RECENT , LIKE_POST , UNLIKE_POST} from "./actionTypes";
 
-export const recent_ques = (data) =>({
+export const recent_post = (data) =>({
     type: RECENT,
     payload: data
 });

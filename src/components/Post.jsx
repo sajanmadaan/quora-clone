@@ -83,13 +83,15 @@ export const Post = () =>  {
     
         <div className='Avtaaruse'>
           <div className='Avtaarus'>
-            <Avatar /><input type="text" placeholder='Add a Comment ............' />
+            <Avatar />
+            <input type="text" placeholder='Add a Comment ............' />
           </div>
           <div className='Avtaaru'>
-          <button>Add Comment</button>
+          <button >Add Comment</button>
           </div>
 
         </div>
+      
         <div className='Avaaruse'>
           <div>
          <Avatar /> </div>
