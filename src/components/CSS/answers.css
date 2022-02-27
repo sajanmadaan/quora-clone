@@ -27,21 +27,24 @@
       flex-direction: row;
       gap:20px;
       margin-top: 5px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid gray;
   }
   .ansfolpass > div{
     display: flex;
     flex-direction: row;
 }
  
-  .widget_contentTitle1 {
+  .widget__contentTitle1 {
     margin-left: 10px;
   }
   
-  .widget_contentTitle1 > h5 {
+  .widget__contentTitle1 > h3 {
     color: rgb(70, 68, 68);
   }
   
-  .widget_contentTitle1 > p {
+  .widget__contentTitle1 > p {
     color: gray;
     font-size: small;
+    margin-bottom: 12px;
   }

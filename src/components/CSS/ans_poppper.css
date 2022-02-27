@@ -1,0 +1,19 @@
+.answerPop{
+    position: absolute;
+}
+.answerPop > button{
+    border: none;
+    background-color: transparent;
+    margin-right: 20px;
+}
+.text_div hr{
+    height: 1px;
+    border:0;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.box2 textarea{
+    width: 80%;
+    text-align: center;
+}
