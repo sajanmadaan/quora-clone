@@ -1,0 +1,16 @@
+
+
+.text_div hr{
+    height: 1px;
+    border:0;
+    border-bottom: 1px solid lightgray;
+}
+
+.text_div{
+    border: 1px solid red;
+}
+
+.box textarea{
+    width: 80%;
+    text-align: center;
+}
